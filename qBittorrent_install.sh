@@ -124,7 +124,7 @@ config_env(){
 
 ##### 配置环境变量 #####
 start_qbittorrent(){
-    qbittorrent-nox > /dev/null 2&>1 &
+    qbittorrent-nox > /dev/null 2>&1 &
     if [ $? -ne 0 ]; then
         echo "qBittorrent-nox启动失败，请手动启动"
         exit 0;
