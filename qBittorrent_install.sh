@@ -144,16 +144,16 @@ start_qbittorrent(){
 
 ##### 主函数入口点 #####
 #配置外置存储目录
-#config_USB_PATH
+config_USB_PATH
 #解压程序文件
-#extract_data $SOFT_PATH
+extract_data $SOFT_PATH
 #配置qBittorrent
-#echo "正在配置qBittorrent"
-#config_qbittorrent $USB_PATH $SOFT_PATH
+echo "正在配置qBittorrent"
+config_qbittorrent $USB_PATH $SOFT_PATH
 #添加开机自启
-#config_startup $USB_PATH
+config_startup $USB_PATH
 #配置环境变量
-#config_env $SOFT_PATH
+config_env $SOFT_PATH
 #运行qBittorrent
 echo "正在启动qBittorrent-nox"
 start_qbittorrent
