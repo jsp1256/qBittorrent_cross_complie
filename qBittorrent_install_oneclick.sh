@@ -22,7 +22,7 @@ install_soft(){
 
 echo  "请选择要安装的qBittorrent版本,输入数字[1-2]"
 echo  "1. qBittorrent-4.1.0 (with Qt5)"
-echo  "2.qBittorrent-3.3.15 (with Qt4)"
+echo  "2. qBittorrent-3.3.15 (with Qt4)"
 read flag
 ##安装必要的软件包
 install_soft
