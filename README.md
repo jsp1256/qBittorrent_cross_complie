@@ -9,7 +9,7 @@
 * zlib-1.2.11  
 * libiconv-1.15  
 
-编译的qBittorrent 4.4.10由有以下更新  
+编译的qBittorrent 4.4.10有以下更新  
 * qBittorrent-3.3.15 ==> qBittorrent-4.4.10
 * qt-lib-4.8 ==> qt-lib-5.5.1  
 
