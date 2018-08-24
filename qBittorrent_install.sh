@@ -1,7 +1,7 @@
 #!/bin/sh
 ##qBittorrent部署安装脚本
 ##qBittorrent_install.sh
-##version: 1.2
+##version: 1.3
 ##### 配置文件 #####
 USB_PATH=""
 SOFT_PATH=""
@@ -32,10 +32,12 @@ boot(){
     start
 }
 start() {
-    .$1/qBittorrent/bin/qbittorrent-nox &
+    cd $1/qBittorrent/bin
+    ./qbittorrent-nox &
 }
 EOF
     chmod a+x /etc/init.d/qBittorrent
+    chmod a+x $1/qBittorrent/bin/qbittorrent-nox
     /etc/init.d/qBittorrent enable
 }
 
