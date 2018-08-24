@@ -33,6 +33,8 @@ boot(){
 }
 start() {
     cd $1/qBittorrent/bin
+    export HOME=/root
+    export LD_LIBRARY_PATH=/mnt/mmcblk0p1/qbittorrent/lib
     ./qbittorrent-nox &
 }
 EOF
