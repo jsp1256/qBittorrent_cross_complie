@@ -18,7 +18,7 @@
 wget -c --no-check-certificate -O - https://raw.githubusercontent.com/jsp1256/qBittorrent_cross_complie/master/qBittorrent_install_oneclick.sh | /bin/sh 
 ~~~
   
-计划中的版本：
+计划中的版本：  
 qBittorrent-4.4.12  
 ├── libtorrent-1.1.19  
 │   ├── boost-system-1.68  
