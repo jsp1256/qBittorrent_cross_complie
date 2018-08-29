@@ -50,8 +50,8 @@ EOF
 ##参数: $1:USB挂载点 $2:程序安装目录
 config_qbittorrent(){
 mkdir -p $1/Downloads
-mkdir -p $2/share/Settings/qBittorrent/
-    cat>$2/share/Settings/qBittorrent/qBittorrent.conf<<EOF
+mkdir -p $2/share/Settings/qBittorrent/config
+    cat>$2/share/Settings/qBittorrent/config/qBittorrent.conf<<EOF
 [AutoRun]
 enabled=false
 program=
