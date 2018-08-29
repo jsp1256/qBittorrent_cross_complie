@@ -17,3 +17,16 @@
 ~~~
 wget -c --no-check-certificate -O - https://raw.githubusercontent.com/jsp1256/qBittorrent_cross_complie/master/qBittorrent_install_oneclick.sh | /bin/sh 
 ~~~
+  
+计划中的版本：
+qBittorrent-4.4.12  
+├── libtorrent-1.1.19  
+│   ├── boost-system-1.68  
+│   ├── boost-chrono-1.68  
+│   ├── boost-random-1.68  
+│   ├── openssl-1.0.2g   
+│   ├── zlib-1.2.11  
+│   └── libiconv-1.15  
+└── qt-lib-5.11  
+因为对现有架构发生很大的改动（核心库发生版本迭代），编译有难度。现在没有精力于是不得不暂且搁置  
+另：目前版本无法下载GEOIP的数据库，问题有待排查（应该出在QT库接口问题，可能需要重写函数实现）  
