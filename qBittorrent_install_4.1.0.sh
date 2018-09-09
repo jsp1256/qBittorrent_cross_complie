@@ -35,14 +35,14 @@ boot(){
     start
 }
 start() {
-    cd $1/qBittorrent/bin
+    cd $1/bin
     export HOME=/root
-    export LD_LIBRARY_PATH=/mnt/mmcblk0p1/qbittorrent/lib
+    export LD_LIBRARY_PATH=$1/lib
     ./qbittorrent-nox --profile=/root/Settings/ &
 }
 EOF
     chmod a+x /etc/init.d/qBittorrent
-    chmod a+x $1/qBittorrent/bin/qbittorrent-nox
+    chmod a+x $1/bin/qbittorrent-nox
     /etc/init.d/qBittorrent enable
 }
 
@@ -158,7 +158,7 @@ exit 0
 extract_data $SOFT_PATH
 #配置qBittorrent
 echo "正在配置qBittorrent"
-config_qbittorrent $USB_PATH $SOFT_PATH
+config_qbittorrent $SOFT_PATH
 #添加开机自启
 config_startup $USB_PATH
 #配置环境变量
