@@ -20,8 +20,8 @@
 * qt-lib-4.8 ==> qt-lib-5.8.0  
 * libtorrent-1.0.6 ==> libtorrent-1.1.9  
 * boost-system-1.56 ==> boost-system-mt-1.68  
-* + boost-chrono-mt-1.68 
-* + boost-random-mt-1.68 
+* ++ boost-chrono-mt-1.68 
+* ++ boost-random-mt-1.68 
 
 一键安装请执行：  
 ~~~
