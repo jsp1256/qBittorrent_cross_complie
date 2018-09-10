@@ -1,5 +1,7 @@
 # qBittorrent_cross_complie
-这个是交叉编译的qBittorrent安装脚本，目标平台mipsel-openwrt-linux。压缩包内包含已编译的可执行的二进制文件   
+这个是交叉编译的qBittorrent安装脚本，目标平台mipsel-openwrt-linux。压缩包内包含已编译的可执行的二进制文件  
+共有BUG：GEOIP数据库下载失败，导致没有对应的国家解析。
+
 编译的qBittorrent 3.3.15（MT7620 uClibc库）由以下组件构成  
 * qBittorrent-3.3.15
 * libtorrent-1.0.6
@@ -12,6 +14,7 @@
 编译的qBittorrent 4.4.10（MT7620 uClibc库）有以下更新  
 * qBittorrent-3.3.15 ==> qBittorrent-4.4.10
 * qt-lib-4.8 ==> qt-lib-5.5.1  
+目前已知的BUG：4.1.0批量添加种子存在问题。
 
 编译的qBittorrent 4.4.12（MT7621 musl库）有以下更新  
 * qBittorrent-3.3.15 ==> qBittorrent-4.4.12
@@ -21,7 +24,9 @@
 * libtorrent-1.0.6 ==> libtorrent-1.1.9  
 * boost-system-1.56 ==> boost-system-mt-1.68  
 * ++ boost-chrono-mt-1.68 
-* ++ boost-random-mt-1.68 
+* ++ boost-random-mt-1.68  
+目前已知的BUG:4.1.2监听地址有错误，需要手动修改配置文件，具体可以参考https://github.com/qbittorrent/qBittorrent/issues/9333，  
+另外，种子最大连接数超过10个会发生崩溃。
 
 一键安装请执行：  
 ~~~
