@@ -131,7 +131,7 @@ config_env(){
 
 ##### 配置环境变量 #####
 start_qbittorrent(){
-    qbittorrent-nox > /dev/null 2>&1 &
+    qbittorrent-nox --profile=/root/Settings/ > /dev/null 2>&1 &
     if [ $? -ne 0 ]; then
         echo "qBittorrent-nox启动失败，请手动启动"
         exit 0;
@@ -158,7 +158,7 @@ exit 0
 extract_data $SOFT_PATH
 #配置qBittorrent
 echo "正在配置qBittorrent"
-config_qbittorrent $SOFT_PATH
+config_qbittorrent $USB_PATH $SOFT_PATH
 #添加开机自启
 config_startup $USB_PATH
 #配置环境变量
