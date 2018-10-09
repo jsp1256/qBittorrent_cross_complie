@@ -11,11 +11,6 @@
 * zlib-1.2.11  
 * libiconv-1.15  
 
-编译的qBittorrent 4.4.10（MT7620 uClibc库）有以下更新  
-* qBittorrent-3.3.15 ==> qBittorrent-4.4.10
-* qt-lib-4.8 ==> qt-lib-5.5.1  
-目前已知的BUG：4.1.0批量添加种子存在问题。
-
 编译的qBittorrent 4.4.13（MT7620 uClibc库）有以下更新  
 * qBittorrent-4.4.10 ==> qBittorrent-4.4.13
 * qt-lib-5.5.1 ==> qt-lib-5.8.0  
@@ -41,15 +36,4 @@
 wget -c --no-check-certificate -O - https://raw.githubusercontent.com/jsp1256/qBittorrent_cross_complie/master/qBittorrent_install_oneclick.sh | /bin/sh 
 ~~~
   
-计划中的版本：  
-qBittorrent-4.4.12  
-├── libtorrent-1.1.19  
-│   ├── boost-system-1.68  
-│   ├── boost-chrono-1.68  
-│   ├── boost-random-1.68  
-│   ├── openssl-1.0.2g   
-│   ├── zlib-1.2.11  
-│   └── libiconv-1.15  
-└── qt-lib-5.11  
-因为对现有架构发生很大的改动（核心库发生版本迭代），编译有难度。现在没有精力于是不得不暂且搁置  
-另：目前版本无法下载GEOIP的数据库，问题有待排查（应该出在QT库接口问题，可能需要重写函数实现）  
+另：目前版本无法以HTTPS协议的形式下载GEOIP的数据库（错误301），该协议实现要求SSL支持，需要QNetworkRequest封装SSL协议配置并传递给QNetworkAccessManager以实现下载，同时需要依赖openssl动态监测，可能需要重新编译现有的QT框架库，暂以通常HTTP协议下载解决。  
