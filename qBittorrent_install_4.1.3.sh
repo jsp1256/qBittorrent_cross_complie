@@ -40,7 +40,7 @@ start() {
     ./qbittorrent-nox --profile=$2/Settings/ &
 }
 EOF
-    chmod a+x /etc/init.d/qBittorrent
+    chmod a+x /etc/init.d/qbittorrent
     chmod a+x $1/bin/qbittorrent-nox
     /etc/init.d/qBittorrent enable
 }
@@ -110,7 +110,7 @@ extract_data(){
         rm -rf $1
         mv install/ $1
     else
-        echo 找不到qb_release-4.1.0.tar.gz，请确认其是否放置相同目录下！
+        echo 找不到$2，请确认其是否放置相同目录下！
         exit 0
     fi
 }
