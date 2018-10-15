@@ -26,13 +26,13 @@ echo  "2. qBittorrent-3.3.15 (with Qt4)"
 read flag
 ##安装必要的软件包
 install_soft
-mkdir tmp
+mkdir -p tmp
 cd tmp
 if [ $flag = "1" ]; then
     wget -c https://github.com/jsp1256/qBittorrent_cross_complie/raw/master/qb_release-4.1.3.tar.gz
     wget -c https://raw.githubusercontent.com/jsp1256/qBittorrent_cross_complie/master/lib.sh
     wget -c -O - https://raw.githubusercontent.com/jsp1256/qBittorrent_cross_complie/master/qBittorrent_install_4.1.3.sh | /bin/sh
-else if [ $flag = "2" ] then
+else if [ $flag = "2" ]; then
     wget -c https://github.com/jsp1256/qBittorrent_cross_complie/raw/master/qb_release.tar.gz
     wget -c -O - https://raw.githubusercontent.com/jsp1256/qBittorrent_cross_complie/master/qBittorrent_install.sh | /bin/sh
 else
