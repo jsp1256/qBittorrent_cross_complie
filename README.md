@@ -14,9 +14,9 @@
 编译的qBittorrent 4.4.13（MT7620 uClibc库）有以下更新  
 * qBittorrent-4.4.10 ==> qBittorrent-4.4.13
 * qt-lib-5.5.1 ==> qt-lib-5.8.0  
-* libtorrent-1.0.6 ==> libtorrent-1.0.11  
-* boost-system-1.56 ==> boost-system-mt-1.60  
-已经修复4.1.0批量添加种子存在问题。
+* libtorrent-1.0.6 ==> libtorrent-1.1.10  
+* boost-system-1.56 ==> boost-system-mt-1.68  
+已经修复4.1.0批量添加种子存在问题，修复死机问题。
 目前已知的BUG：搭配libtoorrent-1.1.10 && boost-system-1.68会导致文件读写发生错误，目录相关操作失效。
 
 编译的qBittorrent 4.4.12（MT7621 musl库）有以下更新  
