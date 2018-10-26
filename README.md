@@ -18,6 +18,7 @@
 * libtorrent-1.0.6 ==> libtorrent-1.1.10  
 * boost-system-1.56 ==> boost-system-mt-1.68  
 * 该包带有自动部署脚本  
+
 已经修复4.1.0批量添加种子存在问题，修复死机问题。
 目前已知的BUG：搭配libtoorrent-1.1.10 && boost-system-1.68会导致文件读写发生错误，目录相关操作失效。
 
@@ -30,6 +31,7 @@
 * boost-system-1.56 ==> boost-system-mt-1.68  
 * ++ boost-chrono-mt-1.68 
 * ++ boost-random-mt-1.68  
+
 目前已知的BUG:4.1.2监听地址有错误，需要手动修改配置文件，具体可以参考https://github.com/qbittorrent/qBittorrent/issues/9333，  
 另外，种子最大连接数超过10个会发生崩溃。  
 
