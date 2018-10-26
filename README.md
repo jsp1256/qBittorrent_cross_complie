@@ -10,12 +10,14 @@
 * openssl-1.0.2g  
 * zlib-1.2.11  
 * libiconv-1.15  
+* 该包带有自动部署脚本  
 
 编译的qBittorrent 4.4.13（MT7620 uClibc库）有以下更新  
 * qBittorrent-4.4.10 ==> qBittorrent-4.4.13
 * qt-lib-5.5.1 ==> qt-lib-5.8.0  
 * libtorrent-1.0.6 ==> libtorrent-1.1.10  
 * boost-system-1.56 ==> boost-system-mt-1.68  
+* 该包带有自动部署脚本  
 已经修复4.1.0批量添加种子存在问题，修复死机问题。
 目前已知的BUG：搭配libtoorrent-1.1.10 && boost-system-1.68会导致文件读写发生错误，目录相关操作失效。
 
@@ -29,11 +31,17 @@
 * ++ boost-chrono-mt-1.68 
 * ++ boost-random-mt-1.68  
 目前已知的BUG:4.1.2监听地址有错误，需要手动修改配置文件，具体可以参考https://github.com/qbittorrent/qBittorrent/issues/9333，  
-另外，种子最大连接数超过10个会发生崩溃。
+另外，种子最大连接数超过10个会发生崩溃。  
 
-一键安装请执行：  
-~~~
-wget -c --no-check-certificate -O - https://raw.githubusercontent.com/jsp1256/qBittorrent_cross_complie/master/qBittorrent_install_oneclick.sh | /bin/sh 
-~~~
-  
-另：目前版本无法以HTTPS协议的形式下载GEOIP的数据库（错误301），该协议实现要求SSL支持，需要QNetworkRequest封装SSL协议配置并传递给QNetworkAccessManager以实现下载，同时需要依赖openssl动态监测，可能需要重新编译现有的QT框架库，暂以通常HTTP协议下载解决。  
+另：目前以上版本无法以HTTPS协议的形式下载GEOIP的数据库（错误301），该协议实现要求SSL支持，需要QNetworkRequest封装SSL协议配置并传递给QNetworkAccessManager以实现下载，同时需要依赖openssl动态监测，可能需要重新编译现有的QT框架库，暂以通常HTTP协议下载解决。 
+
+编译的qBittorrent 4.1.13（MT7621 uClibc库）由以下组件构成  
+* qBittorrent-4.1.13
+* libtorrent-1.0.11
+* qt-lib-5.8.0（openssl-linked）
+* boost-system-1.56（multi）
+* openssl-1.0.2p  
+* zlib-1.2.11  
+* libiconv-1.15  
+
+注：为了保证某些PT站点的种子正常下载（防止出现文件IO错误），换用了libtorrent1.0的分支，此外，已经发现使用libtorrent 1.0.11分支的qb在现有平台上的IO效能表现低于使用libtorrent 1.1.10分支，约会造成30%的性能损耗。另外，重新编译了QT框架库，内部集成了openssl，HTTPS下载功能已经恢复。
