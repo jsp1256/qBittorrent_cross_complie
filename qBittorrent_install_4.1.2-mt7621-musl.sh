@@ -38,6 +38,16 @@ start() {
     export LD_LIBRARY_PATH=$1/qbittorrent/lib
     ./qbittorrent-nox --profile=/root/Settings/ &
 }
+stop() {
+    killall qbittorrent-nox
+}
+restart() {
+    killall qbittorrent-nox
+    cd $1/qbittorrent/bin
+    export HOME=/root
+    export LD_LIBRARY_PATH=$1/qbittorrent/lib
+    ./qbittorrent-nox --profile=/root/Settings/ &
+}
 EOF
     chmod a+x /etc/init.d/qBittorrent
     chmod a+x $1/qbittorrent/bin/qbittorrent-nox
