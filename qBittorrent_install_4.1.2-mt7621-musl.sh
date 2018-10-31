@@ -85,6 +85,7 @@ MailNotification\req_auth=false
 MailNotification\req_ssl=false
 MailNotification\smtp_server=smtp.changeme.com
 MailNotification\username=
+WebUI\Address=*
 WebUI\HTTPS\Enabled=false
 WebUI\LocalHostAuth=true
 WebUI\Port=8080
