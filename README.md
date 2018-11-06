@@ -22,18 +22,6 @@
 已经修复4.1.0批量添加种子存在问题，修复死机问题。
 目前已知的BUG：搭配libtoorrent-1.1.10 && boost-system-1.68会导致文件读写发生错误，目录相关操作失效。
 
-编译的qBittorrent 4.4.12（MT7621 musl库）有以下更新  
-* qBittorrent-3.3.15 ==> qBittorrent-4.4.12
-* qt-lib-4.8 ==> qt-lib-5.8.0  
-* openssl-1.0.2g ==> openssl-1.0.2p
-* qt-lib-4.8 ==> qt-lib-5.8.0  
-* libtorrent-1.0.6 ==> libtorrent-1.1.9  
-* boost-system-1.56 ==> boost-system-mt-1.68  
-* ++ boost-chrono-mt-1.68 
-* ++ boost-random-mt-1.68  
-
-目前已知的BUG:4.1.2监听地址有错误，需要手动修改配置文件，具体可以参考https://github.com/qbittorrent/qBittorrent/issues/9333，  
-另外，种子最大连接数超过10个会发生崩溃。  
 
 另：目前以上版本无法以HTTPS协议的形式下载GEOIP的数据库（错误301），该协议实现要求SSL支持，需要QNetworkRequest封装SSL协议配置并传递给QNetworkAccessManager以实现下载，同时需要依赖openssl动态监测，可能需要重新编译现有的QT框架库，暂以通常HTTP协议下载解决。 
 
