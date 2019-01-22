@@ -64,4 +64,5 @@ start()
 stop()
 {
     killall qbittorrent-nox
+    return 0
 }
