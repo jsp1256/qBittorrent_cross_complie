@@ -1,6 +1,14 @@
 # qBittorrent_cross_complie
 这个是交叉编译的qBittorrent安装脚本，目标平台mipsel-openwrt-linux。压缩包内包含已编译的可执行的二进制文件  
-共有BUG：GEOIP数据库下载失败，导致没有对应的国家解析，该BUG已经在最新编译的4.1.3版本中修复。
+共有BUG：GEOIP数据库下载失败，导致没有对应的国家解析，该BUG已经在最新编译的4.1.3版本中修复。  
+
+新增Luci的支持，可于Luci下配置和运行qbittorrent（前提是你已经下载解压了文件）  
+Luci可支持的操作有：  
+* 配置程序执行目录和库文件目录
+* 配置程序配置文件根目录
+* 配置下载目录
+* 修改WEBUI端口
+* 可查看程序运行状态
 
 编译的qBittorrent 3.3.15（MT7620 uClibc库）由以下组件构成  
 * qBittorrent-3.3.15
