@@ -8,7 +8,9 @@ Luci可支持的操作有：
 * 配置程序配置文件根目录
 * 配置下载目录
 * 修改WEBUI端口
-* 可查看程序运行状态
+* 可查看程序运行状态  
+
+针对qBittorrent 4.1.3补齐了全部的ipk，实际上也可以在24kec和1004kec上运行，但是分支默认是1004kec，24kec的请强制安装即可（--force-depends）  
 
 编译的qBittorrent 3.3.15（MT7620 uClibc库）由以下组件构成  
 * qBittorrent-3.3.15
