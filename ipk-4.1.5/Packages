@@ -1,0 +1,131 @@
+Package: libboost-chrono
+Version: 1.69
+Depends: libc, libssp, libboost-system
+Source: package/new/boost
+Section: libs
+Architecture: mipsel_1004kc_dsp
+Installed-Size: 11467
+Filename: libboost-chrono_1.69_mipsel_1004kc_dsp.ipk
+Size: 12179
+MD5Sum: e924cf4058f710eab1ffa098c1b46b47
+SHA256sum: 0ed96d74d174e0ca2069b9840ecabf455fa9ec3a42279a3f3f4ff83d57565f85
+Description:  Boost Random Library
+
+Package: libboost-random
+Version: 1.69
+Depends: libc, libssp, libboost-system
+Source: package/new/boost
+Section: libs
+Architecture: mipsel_1004kc_dsp
+Installed-Size: 9923
+Filename: libboost-random_1.69_mipsel_1004kc_dsp.ipk
+Size: 10606
+MD5Sum: a07c2d8e3373ac1a59cfa29525930adf
+SHA256sum: 93021b2889ac9854e5ff1563159189082b4d938799a00bfa61072b5ed9ce0dee
+Description:  Boost Random Library
+
+Package: libboost-system
+Version: 1.69
+Depends: libc, libssp, libstdcpp
+Source: package/new/boost
+Section: libs
+Architecture: mipsel_1004kc_dsp
+Installed-Size: 1160
+Filename: libboost-system_1.69_mipsel_1004kc_dsp.ipk
+Size: 1846
+MD5Sum: d4f45032bb60903aad2afd73ec76ca5a
+SHA256sum: f7c76a2f3a1d5c936f7ebd5e89cc5bc492862daae6166d8f82c793545387ac9e
+Description:  Boost System Library
+
+Package: libQt5Core
+Version: 5.8.0
+Depends: libc, libssp, libstdcpp, zlib, libatomic, libopenssl
+Source: package/lib/Qt-lib
+Section: libs
+Architecture: mipsel_1004kc_dsp
+Installed-Size: 2732922
+Filename: libQt5Core_5.8.0_mipsel_1004kc_dsp.ipk
+Size: 2726995
+MD5Sum: 45298cb2cb738cca78a24e9e43c21d1a
+SHA256sum: bba6c818dcfc07f6e19c5cb3a116d76de3fbdcaac70b5db7f6e65f77366031fb
+Description:  Qt5 Librarys
+
+Package: libQt5Network
+Version: 5.8.0
+Depends: libc, libssp, libQt5Core
+Source: package/lib/Qt-lib
+Section: libs
+Architecture: mipsel_1004kc_dsp
+Installed-Size: 565953
+Filename: libQt5Network_5.8.0_mipsel_1004kc_dsp.ipk
+Size: 565449
+MD5Sum: 39e3f23db32d5348a49bb18881b65e3d
+SHA256sum: b3d411e22e10a45861867ec5af9f095da6b617628ea40a6671bbf730f051ffdb
+Description:  Qt5 Librarys
+
+Package: libQt5Xml
+Version: 5.8.0
+Depends: libc, libssp, libQt5Core
+Source: package/lib/Qt-lib
+Section: libs
+Architecture: mipsel_1004kc_dsp
+Installed-Size: 83781
+Filename: libQt5Xml_5.8.0_mipsel_1004kc_dsp.ipk
+Size: 84411
+MD5Sum: bb8cc89086d76f471a875c450ff67f48
+SHA256sum: 8a81bb0466f745eea5441a9ad432041cb57658208408094f08c13f7dd96e9c6b
+Description:  Qt5 Librarys
+
+Package: libtorrent
+Version: 1.1.11
+Depends: libc, libssp, libstdcpp, libboost-system, libboost-chrono, libboost-random, libopenssl, libiconv-full
+Source: package/new/libtorrent
+Section: libs
+Architecture: mipsel_1004kc_dsp
+Installed-Size: 1363109
+Filename: libtorrent_1.1.11_mipsel_1004kc_dsp.ipk
+Size: 1357002
+MD5Sum: 7e209d90d95b3e49e29ac14f70bc56fa
+SHA256sum: b04bae4702b4ba420c78f10749ed474158444bc9dcd1c2c75fe9a4f8f2ab84da
+Description:  BitTorrent Library V1.1.11,required Boost Library Version is 1.69
+
+Package: luci-app-qbittorrent
+Version: 1.0-1
+Depends: libc, libssp, qbittorrent-nox
+Source: package/luci-app-qbittorrent
+Section: luci
+Architecture: all
+Installed-Size: 1809
+Filename: luci-app-qbittorrent_1.0-1_all.ipk
+Size: 2503
+MD5Sum: b56ff020fc61786e472054ae4ce60634
+SHA256sum: 5694d6945e9bbaf963d7c41d976375f629eaedb0f13038ca90735c457f0d7169
+Description:  This package contains LuCI configuration pages for qbittorrent-nox
+
+Package: luci-i18n-qbittorrent-zh-cn
+Version: 1.0-1
+Depends: libc, libssp, luci-app-qbittorrent
+Source: package/luci-app-qbittorrent
+Section: luci
+Architecture: all
+Installed-Size: 729
+Filename: luci-i18n-qbittorrent-zh-cn_1.0-1_all.ipk
+Size: 1455
+MD5Sum: 01c6b13b6264a315e449516b9959e95e
+SHA256sum: 95dd53e7ef1089356f78924a60cfc56c341f52a03ff105aa3bf2c7f87368eeab
+Description:  Translation support for luci-app-qbittorrent - 简体中文 (Simplified Chinese)
+
+Package: qbittorrent-nox
+Version: 4.1.5
+Depends: libc, libssp, libboost-system, libboost-chrono, libboost-random, libtorrent, libQt5Core, libQt5Network, libQt5Xml, libatomic, libstdcpp, libiconv-full, zlib, python3
+Source: package/new/qbittorrent-nox
+Section: net
+Architecture: mipsel_1004kc_dsp
+Installed-Size: 5013259
+Filename: qbittorrent-nox_4.1.5_mipsel_1004kc_dsp.ipk
+Size: 5011616
+MD5Sum: 01d3134a338edf00001a91b6bcb9b216
+SHA256sum: 7806ff211dc8ea4db03a42c91c4eb8d11774bd7287398ee4ee801cfa22ff5f77
+Description:  BitTorrent client based on Qt5,required libtorrent version is 1.1.x
+ It needs Python3 support for search engine
+
