@@ -10,9 +10,7 @@ Luci可支持的操作有：
 * 修改WEBUI端口
 * 可查看程序运行状态  
 
-新增qBittorrent 4.1.5的支持，可以自定义软件源如下（试了试似乎可以）：  
-src/gz qbittorrent https://github.com/jsp1256/qBittorrent_cross_complie/tree/master/ipk-4.1.5  
-注意，需要安装wget和ca-certificates方能正确下载  
+新增qBittorrent 4.1.5的支持
 本版本依赖python3来支持搜索引擎，固件空间不足的建议安装在外存  
 
 针对qBittorrent 4.1.3补齐了全部的ipk，实际上也可以在24kec和1004kec上运行，但是分支默认是1004kec，24kec的请强制安装即可（--force-depends）  
